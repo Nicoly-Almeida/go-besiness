@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="form">
+        <div class="logo">
+            <img src="assets/logo.png" width="150px" alt="">
+        </div>
+        <div class="login-form" *ngIf="currentUrl === '/'">
+            <app-login-form></app-login-form>
+        </div>
+        <div *ngIf="currentUrl === '/request-password'">
+            <p>recuperar senha</p>
+        </div>
+        <div *ngIf="currentUrl === '/new-password'">
+            <p>nova senha</p>
+        </div>
+        
+    </div>
+    <div class="image">
+        <img src="assets/login-image.png" alt="Login Image">
+    </div>
+</div>
